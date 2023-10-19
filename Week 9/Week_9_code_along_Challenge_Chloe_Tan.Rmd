@@ -1,0 +1,180 @@
+---
+title: "Week 9 Code along and Challenge"
+author: "Chloe Tan"
+date: '2023-10-16'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r}
+#library(dplyr)
+library(tidyverse)
+```
+
+```{r}
+#slide 8 
+tidydata<-tribble(~country,~year,~cases,~population,"Afghanistan", 1999, 745, 19987071,
+"Afghanistan", 2000, 2666, 20595360,
+"Brazil", 1999, 37737, 172006362,
+"Brazil", 2000, 80488, 174504898,
+"China", 1999, 212258, 1272915272,
+"China", 2000, 213766, 1280428583)
+tidydata
+```
+
+
+```{r Tidy data} 
+#slide 8 
+tidydata<-tribble(~country,~year,~cases,~population,"Afghanistan", 1999, 745, 19987071,
+"Afghanistan", 2000, 2666, 20595360,
+"Brazil", 1999, 37737, 172006362,
+"Brazil", 2000, 80488, 174504898,
+"China", 1999, 212258, 1272915272,
+"China", 2000, 213766, 1280428583)
+tidydata
+```
+
+```{r}
+#slide 8 untidy data
+nontidydata <- tribble(
+ ~country,~year,~rate, 
+"Afghanistan", 1999, "745/19987071", 
+"Afghanistan", 2000, "2666/20595360", 
+"Brazil", 1999, "37737/172006362", 
+"Brazil", 2000, "80488/174504898", 
+"China", 1999, "212258/1272915272",
+"China", 2000, "213766/1280428583")
+nontidydata
+
+```
+
+
+
+```{r pressure, echo=TRUE}
+#slide 11
+nontidydata
+```
+
+
+```{r}
+#tidy non tidy data
+#slide 11
+#library(tidyr)
+
+tidiedata<-nontidydata%>%separate(rate,into=c("cases","population"),sep="/")
+
+tidiedata
+```
+
+```{r}
+#slide 12
+
+newtidiedata<-tidiedata%>%pivot_longer(cols=cases:population,names_to="measurement",values_to = "value")
+
+newtidiedata
+
+#make cases and population column renames to new column called value while the cases and population are split into 2 catergories under the names column so we get 4 country names instead of 2 
+#reshape data to suit our purpose, summarise cases in different years
+
+```
+
+```{r}
+#slide 14
+df <- tribble(
+ ~id, ~bp1, ~bp2,
+ "A", 100, 120,
+ "B", 140, 115,
+ "C", 120, 125
+)
+df
+```
+
+```{r}
+#piping slide 14 
+df %>%
+ pivot_longer(
+ cols = bp1:bp2,
+ names_to = "measurement",
+ values_to = "value")
+
+# so we organise data to see which data from A is bp1 and bp2 as compared to the first example where bp1 and bp2 are combined together. so more specific data is produced. 
+
+```
+
+```{r}
+#slide 18 
+newtidiedata
+```
+
+```{r}
+#slide 18
+newtidiedata%>%pivot_wider( names_from="measurement",values_from="value")
+
+#go back to the original plot using pivot_wider
+
+```
+
+```{r}
+#slide 19
+df <- tribble(
+ ~id, ~measurement, ~value,
+ "A", "bp1", 100,
+ "B", "bp1", 140,
+ "B", "bp2", 115, 
+ "A", "bp2", 120,
+ "A", "bp3", 105
+)
+df
+
+```
+
+```{r}
+#slide 19
+df %>% 
+ pivot_wider(
+ names_from = measurement,
+ values_from = value
+ )
+
+```
+
+```{r}
+billboard
+```
+
+```{r}
+#billboard
+rank<-billboard%>%pivot_longer(cols=wk1:wk76,names_to = "week",values_to = "value",values_drop_na = TRUE) %>% mutate(week=parse_number(week))
+rank
+```
+
+```{r}
+ggplot(rank)+aes(x="artist",y="value")+geom_point()+geom_line(aes(group=artist))+facet_wrap(~value)+theme_bw()
+
+```
+
+```{r}
+#challenge question 2
+cms_patient_experience
+```
+
+```{r}
+patients<-cms_patient_experience%>%pivot_wider(names_from = "measure_cd",values_from = "org_pac_id")
+
+patients
+
+```
+
+```{r}
+patients<-cms_patient_experience%>%pivot_wider(names_from = "measure_cd",values_from = "org_pac_id")%>%select(id_cols=starts_with("org"))
+
+patients
+```
+
+
+
+

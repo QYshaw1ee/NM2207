@@ -1,0 +1,129 @@
+---
+title: "Challenge-5"
+author: "Chloe Tan"
+date: "11/9/23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Questions
+<br>
+
+#### Question-1: Local Variable Shadowing 
+
+Create an R function that defines a global variable called `x` with a value of 5. Inside the function, declare a local variable also named `x` with a value of 10. Print the value of `x` both inside and outside the function to demonstrate shadowing.
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+x<-5
+five<-function(){x<-10}
+print(five())
+print(x)
+```
+<br>
+
+#### Question-2: Modify Global Variable
+
+Create an R function that takes an argument and adds it to a global variable called `total`. Call the function multiple times with different arguments to accumulate the values in `total`.
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+total<-3
+multiple_totals<-function(value){total<<-total+value}
+multiple_totals(7)
+multiple_totals(8)
+print(total)
+
+
+```
+<br>
+
+#### Question-3: Global and Local Interaction 
+
+Write an R program that includes a global variable `total` with an initial value of 100. Create a function that takes an argument, adds it to `total`, and returns the updated `total`. Demonstrate how this function interacts with the global variable.
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+total<-100
+
+additional<-function(value){total<<-total+value}
+additional(5)
+print(total)
+
+```
+<br>
+
+#### Question-4: Nested Functions
+
+Define a function `outer_function` that declares a local variable `x` with a value of 5. Inside `outer_function`, define another function `inner_function` that prints the value of `x`. Call both functions to show how the inner function accesses the variable from the outer function's scope.
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+outer_function<-function(x=5){inner_function=x}
+print(outer_function())
+```
+<br>
+
+#### Question-5: Meme Generator Function
+
+Create a function that takes a text input and generates a humorous meme with the text overlaid on an image of your choice. You can use the `magick` package for image manipulation. You can find more details about the commands offered by the package, with some examples of annotating images here: https://cran.r-project.org/web/packages/magick/vignettes/intro.html
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+library(magick)
+
+generate_meme<-function(text,filename){
+  font_size<-30
+  font_colour<-'blue'
+  font_size<-'Arial'
+  base_image<-image_read(filename)
+  base_image<-image_annotate(base_image,text,size=50, gravity = "south")
+  image_write(base_image, path = "output.jpg")
+}
+
+
+generate_meme("a", "meme.jpg")
+  
+```
+<br>
+
+#### Question-6: Text Analysis Game  
+
+Develop a text analysis game in which the user inputs a sentence, and the R function provides statistics like the number of words, characters, and average word length. Reward the user with a "communication skill level" based on their input.
+
+**Solutions:**
+
+```{r, eval=TRUE,echo=TRUE}
+# Enter code here
+game<-function(){cat('welcome to game!\n')}
+user_input<-readline(prompt='enter sentence')
+words<- unlist(strsplit(user_input, split=''))
+number_of_words<-length(words)
+number_of_characters<-sum(nchar(words))
+average_word_length<-mean(nchar(words))
+skill_level<-ifelse(average_word_length>=10,'good', ifelse(average_word_length<=10,'improving'))
+
+print(paste0('results:'))
+print(paste0('number of words:',number_of_words))
+print(paste0('number of characters:',number_of_characters))
+print(paste0('average word length:', average_word_length))
+print(paste0('communication skill level', skill_level))
+
+game()
+
+
+```
+<br>
