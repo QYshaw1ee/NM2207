@@ -1,0 +1,26 @@
+---
+title: "Final Project Week 9 Document"
+author: "Chloe Tan"
+date: '2023-10-18'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Q1) The topic finalised is fitness excercises for the elderly to perform. These include a range of resistance training excercises eg bench press, leg press machine stability excercises eg excercises on a Bosu balance trainer and cardio health eg treadmill walking.
+
+Q2) The data sources I have found are lower strength training excercises to improve balance and leg strength of elderly and resistance training excercises to improve the muscular fitness of the elderly. 
+
+```{r}
+library(shiny)
+runExample("07_widgets")
+
+```
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
