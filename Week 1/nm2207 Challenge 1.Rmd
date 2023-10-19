@@ -1,0 +1,35 @@
+---
+title: "Challenge 1"
+author: "Chloe Tan"
+date: '2023-08-14'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+Hi, my name is Chloe Tan. I am a year 2 Anthropology student who loves to excercise and learn about human culture! 
+
+```{r, out.height= "350px",out.width= "800px",echo=TRUE,eval=TRUE,fig.cap="Replace text here with the caption"}
+knitr::include_graphics ("C:/Users/chloe/OneDrive/Pictures/Camera Roll/2021/03/20210312_023710000_iOS.jpg") 
+```
+```{r, out.height= "350px",out.width= "800px",echo=TRUE,eval=TRUE,fig.cap="Replace text here with the caption"}
+knitr::include_graphics("C:/Users/chloe/OneDrive/Pictures/Camera Roll/Nm2207 challenge 1.png") 
+```
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
