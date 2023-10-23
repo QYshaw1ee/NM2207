@@ -1,0 +1,37 @@
+---
+title: "Final Project Week 10 Document"
+author: "Chloe Tan"
+date: '2023-10-18'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Week 9 (I am changing my topic question! )
+
+Q1) The topic finalized is friendship line phone calls amongst older adults in California during Covid 19.
+
+Q2) The data sources I have found are friendship-line-california-calls-in-response-to-covid-19 and friendship-line-services-provided-to-older-adults-in-response-to-covid-19 (during the year 2020) . 
+
+```{r}
+
+```
+
+Week 10
+
+Qn 1) Are Friendship-line Calls relevant in California? 
+
+Qn2) Why is it important? 
+1) According to Cherry, which was medically revied by Gans, social isolaion ( which was the impact of Covid-19 and isolation measures), social isolation cna lead to medical conditions like weakened immunity and high blood pressure etc. Therefore, social isolation can reduce people's bodily health which will impact their ability to live longer. Hence, friendship-lines may help make people feel less lonley because they have someone to talk to and share their worries or to hear nice encouragement. 
+
+2) Social isolation may lead to potential mental hazards according to Tulan University. For example, "loneliness was associated with 40% increase in the rick of dementia". Therefore, Covid-19 had forced many to be in isolation and experience lonliness. consequently, Covid-19 may cause people to feel lonlieness. Hence, friendship-lines may help make people feel less lonley because they have someone to talk to and share their worries or to hear nice encouragement. 
+
+3) This can help to encourage older people to utilize friendship lines. Since, we often focus on mental health of teenagers and youths, I think its important to show that older adults can and should use friendship lines if they face lonliness or social isolation. 
+
+Qn 3) 
+Rows: County ( different parts of California), Months(from April 2020 to June 2020)
+
+Columns: the Different counties with the highest response of older adults using the friendship line
+
+
