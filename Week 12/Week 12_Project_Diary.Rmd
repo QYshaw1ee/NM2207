@@ -70,7 +70,9 @@ print(concepts)
 ```
 
 
-```{r pressure, echo=FALSE}
+Week 12
 
-```
+I experienced challenges such as not being able to upload my 2 apps. I tried many ways to solve the issue, even looking at the app hosted on my local computer to solve the problem. In the end, with the help of the TA's I found that the issue was due to the app not having the Tidy_Calls_Monthly data set. In addition, after adding the data set inside, I had to make adjustments to my code because the shiny app did not recognize the column headings with spaces in between. Therefore to remedy the situation, I had to replace the heading "Number of calls" to "Number.of.calls". It was difficult because it took me a while to figure out the problem. However, I am glad I did. 
+
+In addition, I found out my original plan to make a scatter plot was not the best way to display my data set. Therefore, I had to find new ways to display the data set. While prof guided me with one example, I had to get creative in using the numbers to draw an inference from to help guide my story. In the end, I decided to create a tab set data set which summarized and calculated the number of calls, the top 15% and bottom 15% of Counties with the most and least number of calls respectively. I used this to draw out the inequalities between the Counties in terms of how much Friendship-line services were utilized in the respective Counties based on the number of calls made. 
 

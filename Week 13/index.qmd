@@ -1,0 +1,25 @@
+---
+title: "Hello, I am Chloe!"
+---
+
+Here is me after the Barbie Movie, 
+
+I personally think the movie reconnected me to see how LIFE is BEAUTIFUL because it is full of Ups and Downs.
+
+ It sounds funny how someone may see life as such and call it beauty, but I can assure you its what makes me Unique!
+ 
+```{r,echo=FALSE,eval=TRUE}
+
+#| eval=TRUE
+ #| out.width="100%"
+ knitr::include_graphics("C:/Website/githubQYshaw1ee.github.io/Barbie_Movie.jpg")
+
+```
+
+### Here is a link to all the things i have done!
+
+Ps. The files are many and messy, but with the help of my prof, I managed to have some form of organisation, lol \^\_\^
+
+Thank you Prof!
+
+<https://github.com/QYshaw1ee/NM2207.git>

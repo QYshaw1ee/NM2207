@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Welcome"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: Project.qmd
+        text: Project
+
+
+format:
+  html:
+    theme: quartz
+    css: styles.css
+    toc: true
+
+editor: visual
+

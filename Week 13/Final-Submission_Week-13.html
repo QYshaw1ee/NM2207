@@ -11,8 +11,9 @@
 
 <meta name="author" content="Chloe Tan" />
 
+<meta name="date" content="2023-11-13" />
 
-<title>Week 12 Project Diary</title>
+<title>Week 13 Final Submision</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -349,9 +350,9 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Week 12 Project Diary</h1>
+<h1 class="title toc-ignore">Week 13 Final Submision</h1>
 <h4 class="author">Chloe Tan</h4>
-<h4 class="date">2023-11-6</h4>
+<h4 class="date">2023-11-13</h4>
 
 </div>
 
@@ -365,36 +366,39 @@ friendship-line-services-provided-to-older-adults-in-response-to-covid-19
 (during the year 2020) .</p>
 <p>Week 10</p>
 <p>Qn 1) Are Friendship-line Calls relevant in California?</p>
-<p>Qn2) Why is it important? 1) According to Cherry, which was medically
-revied by Gans, social isolaion ( which was the impact of Covid-19 and
-isolation measures), social isolation cna lead to medical conditions
-like weakened immunity and high blood pressure etc. Therefore, social
-isolation can reduce people’s bodily health which will impact their
-ability to live longer. Hence, friendship-lines may help make people
-feel less lonley because they have someone to talk to and share their
-worries or to hear nice encouragement.</p>
-<ol start="2" style="list-style-type: decimal">
+<p>Qn2) Why is it important?</p>
+<ol style="list-style-type: decimal">
+<li><p>According to Cherry, which was medically revised by Gans, social
+isolation ( which was the impact of Covid-19 and isolation measures),
+social isolation can lead to medical conditions like weakened immunity
+and high blood pressure etc. Therefore, social isolation can reduce
+people’s bodily health which will impact their ability to live longer.
+Hence, friendship-lines may help make people feel less lonely because
+they have someone to talk to and share their worries or to hear nice
+encouragement.</p></li>
 <li><p>Social isolation may lead to potential mental hazards according
-to Tulan University. For example, “loneliness was associated with 40%
+to Tulane University. For example, “loneliness was associated with 40%
 increase in the rick of dementia”. Therefore, Covid-19 had forced many
-to be in isolation and experience lonliness. consequently, Covid-19 may
-cause people to feel lonlieness. Hence, friendship-lines may help make
-people feel less lonley because they have someone to talk to and share
+to be in isolation and experience loneliness. consequently, Covid-19 may
+cause people to feel loneliness. Hence, friendship-lines may help make
+people feel less lonely because they have someone to talk to and share
 their worries or to hear nice encouragement.</p></li>
 <li><p>This can help to encourage older people to utilize friendship
 lines. Since, we often focus on mental health of teenagers and youths, I
 think its important to show that older adults can and should use
-friendship lines if they face lonliness or social isolation.</p></li>
+friendship lines if they face loneliness or social isolation.</p></li>
 </ol>
 <p>Qn 3) Rows: County ( different parts of California), Months(from
 April 2020 to June 2020)</p>
 <p>Columns: the Different counties with the highest response of older
 adults using the friendship line</p>
-<p>Week 11: Qn1) Scatter plot : I will plot the variables Number of
-friendship calls in California (y axis) against the date of the
-friendship call (x axis)</p>
-<p>barcharts: I will consolidate the number of friendship calls in a
-month eg 04_2020 for the various counties in California</p>
+<p>Week 11:</p>
+<p>Qn1) Scatter plot :</p>
+<p>I will plot the variables Number of friendship calls in California (y
+axis) against the date of the friendship call (x axis)</p>
+<p>bar charts:</p>
+<p>I will consolidate the number of friendship calls in a month eg
+04_2020 for the various counties in California</p>
 <p>Qn2) I plan to make the story interactive by making my bar charts
 interactive with plotly because it has ggplotly which makes ggplots
 interactive.</p>
@@ -406,6 +410,14 @@ calls in California)</p>
 <p>ggplotly(name of graph) # the command to make graph interactive</p>
 <p>link:</p>
 <p><a href="https://www.geeksforgeeks.org/create-interactive-ggplot2-graphs-with-plotly-in-r/" class="uri">https://www.geeksforgeeks.org/create-interactive-ggplot2-graphs-with-plotly-in-r/</a></p>
+<p>EDIT: I have experienced challenges in finding ways to showcase my
+data. As my dataset has 60 counties and only shows the number of
+friendship calls, my previous method of a scatterplot was not the best
+way to showcase the data. However, through Shiny my Prof helped guide me
+to use create an app that shows the individual line plot graphs of each
+County. Therefore, people can easily see how many frienship calls were
+made per county. This was a better way to translate the data i have into
+a “story”.</p>
 <pre class="r"><code>#Qn3) 
 #Concepts taught vs self learned: 
 
@@ -417,12 +429,11 @@ print(concepts)</code></pre>
 ## 1              drawing graphs     7          nil
 ## 2 reshape or picking up  data     4          nil
 ## 3               insert photos     1          nil</code></pre>
-<p>Week 12</p>
-<p>I experienced challenges such as not being able to upload my 2 apps.
-I tried many ways to solve the issue, even looking at the app hosted on
-my local computer to solve the problem. In the end, with the help of the
-TA’s I found that the issue was due to the app not having the
-Tidy_Calls_Monthly data set. In addition, after adding the data set
+<p>Week 12 I experienced challenges such as not being able to upload my
+2 apps. I tried many ways to solve the issue, even looking at the app
+hosted on my local computer to solve the problem. In the end, with the
+help of the TA’s I found that the issue was due to the app not having
+the Tidy_Calls_Monthly dataset. In addition, after adding the data set
 inside, I had to make adjustments to my code because the shiny app did
 not recognize the column headings with spaces in between. Therefore to
 remedy the situation, I had to replace the heading “Number of calls” to
@@ -438,6 +449,127 @@ bottom 15% of Counties with the most and least number of calls
 respectively. I used this to draw out the inequalities between the
 Counties in terms of how much Friendship-line services were utilized in
 the respective Counties based on the number of calls made.</p>
+<p>Week 13, FINAL SUBMISSION (500 words minimum, 1.2 Maximum)</p>
+<ol style="list-style-type: decimal">
+<li>What is the theme of your data story?</li>
+</ol>
+<p>The Theme is “Its okay not to be okay”.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Why is it important to address this question?</li>
+</ol>
+<p>Often, we overlook the importance a phone call can have on someone.
+During the Covid-19 Pandemic, many were forced into isolation away from
+our friends, family and the people we love. This took a toll on many who
+experiences feelings of loneliness and social isolation. Therefore, a
+phone call would be extremely helpful to cheer someone up because they
+would feel less lonely. As shown by Cherry, social isolation can lead to
+medical conditions like weakened immunity and high blood pressure
+etc.Therefore, a friendship call would allow individuals someone to talk
+to and they would feel less lonely. This may help reduce the likelihood
+of a weakened immunity. Not only would social isolation lead to a
+weakened immunity, but Social isolation may lead to potential mental
+hazards like dementia according to Tulane University. Therefore,
+friendship calls may be a solution to help people feel less lonely. I
+believe that friendship calls should be utilized even if we are not
+experiencing quarantine but can be used during our day to day lives if
+ever we feel lonely. It is important to address the feelings of
+loneliness and social isolation through showing a “way” to feel less
+lonely. This “way” is through a friendship call.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Why do you think the data sources that you have curated can help you
+answer the question?</li>
+</ol>
+<p>My question is “Are Friendship-line Services relevant in California?”
+( changes “calls” in Week 9 to “services” )</p>
+<p>I think the data sources have helped answer my question because they
+show how friendship calls are utilized in California based on the
+individual counties. The data sources show how many friendship calls
+were made during April 2020 to July 2020 ( these months are during the
+Covid-19 Pandemic where many were away and thus isolated from people
+).</p>
+<p>Therefore, the data sources can tell us friendship calls were a
+useful way for people to feel less lonely which helps combat problems
+like weakened immunity and mental health issues. This highlights the
+relevance of Friendship calls to improve the lives of the Californian
+people.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>What are the insights from the data and how are they depicted in
+plots?</li>
+</ol>
+<p>The raw data shows the total number of Friendship calls in a day from
+April 2020 to July 2020 by County.</p>
+<ol style="list-style-type: decimal">
+<li><p>I tidied the data and combined the days into months so that we
+can see how different counties have different number of calls made. They
+are depicted through the summary table that organised the data sources
+by County and by Month, ( we shall call the table Plot 1).Therefore,
+someone can extract the raw numbers easily if they want an exact number
+of the Friendship calls in a particular county. However, I used month
+instead of day because not many analysis would compare phone calls made
+in a day because the number is too specific and does not contribute to
+useful qualitative analysis.</p></li>
+<li><p>I made plot 2 (with the help of Prof) that tracks the monthly
+progression or regression of calls by county. This allows people to see
+how the number of Friendship calls needed in that particular county is
+like. This makes it easier for people to visualize the number of calls
+because California has too many counties (60) that can be charted in one
+interactive plot. Plot 2 is concerned with seeing how well the
+friendship call services did during April to July 2020 based on the
+number of calls made to the Friendship call Service.</p></li>
+<li><p>I summarized the most, least, average and medium number of
+friendship calls for each county so its easier to extrapolate the
+numbers compared to extrapolating from a Plot 2. I also looked at the
+top 10 and bottom 10 countries so we can see the disparities between the
+number of Friendship calls used in the top 15% and bottom 15% of the
+counties in California. I chose 15% because I think it is a
+representative sample to cover the extreme top and bottom counties that
+utilized the Friendship calls so that I can make comparisons to see if
+Friendship calls are relevant to the people of California.</p></li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li>How did you implement this entire project? Were there any new
+concepts that you learnt to implement some aspects of it?</li>
+</ol>
+<p>I implemented this project on a qmd page titled “Project.qmd” so that
+my website would be organised based on my introduction,the purpose of
+this website (about page) and one example of a data story
+(Project.qmd).</p>
+<p>I started with Tidying up the raw data set to create a table which
+showed a brief overview of the number of Friendship calls by county.
+After which I created a shiny app to integrate into my website. Instead
+of using a template example which shiny provided, I learnt how to create
+an app from scratch which shows the bottom 10 and top 10 counties with
+the number of their friendship calls respectively. This was partly new
+to me because we did not go into detail during week 8 lecture on how to
+create a shiny app from scratch. While we were given the 3 main items
+(UI, server and run the app commands), it was especially challenging
+trying to figure out the in between which was curating the table to show
+the tab-sets I want and what statistics I want to get from my data set
+into the summary table. I think this helped to add onto my existing
+knowledge of shiny apps and how to create a personalized app without
+relying on the given examples.</p>
+<p>In the process of creating interactive plots, I had learned how to
+use Plotly, which is an app that creates interactive scatter plots, bar
+charts. Even though, I later found out it does not best represents my
+data set I think Plotly is still useful for my learning. In the future,
+when I find a data set that can be represented with a scatter plot, I
+may use plotly for Scatter, Bar, Area charts etc.</p>
+<p>#References</p>
+<p>California Population 2023 (Demographics, maps, graphs). (n.d.).
+Retrieved 23 November 2023, from <a href="https://worldpopulationreview.com/states/california-population" class="uri">https://worldpopulationreview.com/states/california-population</a></p>
+<p>Friendship line services provided to older adults in r… 19—Dataset by
+chhs. (n.d.). Data.World. Retrieved 22 November 2023, from <a href="https://data.world/chhs/d71df234-7ba1-42e7-98bc-160a55beb7d1" class="uri">https://data.world/chhs/d71df234-7ba1-42e7-98bc-160a55beb7d1</a></p>
+<p>How to embed a shiny app on website – data science genie. (n.d.).
+Retrieved 22 November 2023, from <a href="https://datasciencegenie.com/how-to-embed-a-shiny-app-on-website/" class="uri">https://datasciencegenie.com/how-to-embed-a-shiny-app-on-website/</a></p>
+<p>Park, S., &amp; Jung, D. (Directors). (2020, June). Its Okay to Not
+Be Okay.</p>
+<p>The impact of social isolation on mental health. (n.d.). Verywell
+Mind. Retrieved 22 November 2023, from <a href="https://www.verywellmind.com/the-impact-of-social-isolation-on-mental-health-7185458" class="uri">https://www.verywellmind.com/the-impact-of-social-isolation-on-mental-health-7185458</a></p>
+<p>Understanding the effects of social isolation on mental health.
+(2020, December 8). <a href="https://publichealth.tulane.edu/blog/effects-of-social-isolation-on-mental-health/" class="uri">https://publichealth.tulane.edu/blog/effects-of-social-isolation-on-mental-health/</a></p>
+<p>#Word count: 1,094 words (excluding questions and Title headers)</p>
+<p>#QMD Files for Website is inside the Week 13 Folder. # Thank you for
+your patience in teaching me Prof :).</p>
 
 
 
